@@ -10,6 +10,7 @@ namespace Automatizador.ADO
     //Capa de acceso a datos
     public class DataAccessLayer
     {
+		//La cadena de conexion no será visible en el repositorio.
         private string stringConnections = "";
 
         private SqlConnection connectionSql;
