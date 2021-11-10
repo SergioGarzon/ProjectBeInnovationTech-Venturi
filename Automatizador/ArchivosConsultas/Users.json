@@ -1,0 +1,11 @@
+{
+  "Usuarios": [
+    {
+      "Usuario": "Administrador",
+      "Nombre": {
+        "Primer Nombre": "Administrador",
+        "Segundo Nombre": "Be Tech"
+      },
+      "Clave": "12345678"
+    }]
+}
