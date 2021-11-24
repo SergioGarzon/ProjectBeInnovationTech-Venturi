@@ -34,6 +34,11 @@ namespace Automatizador
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.chkMicrosoftEdge = new System.Windows.Forms.CheckBox();
+            this.chkInternetExplorer = new System.Windows.Forms.CheckBox();
             this.chkMozilla = new System.Windows.Forms.CheckBox();
             this.chkChrome = new System.Windows.Forms.CheckBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -57,18 +62,13 @@ namespace Automatizador
             this.btnSpiceworks = new System.Windows.Forms.Button();
             this.btnSage = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.chkInternetExplorer = new System.Windows.Forms.CheckBox();
-            this.chkMicrosoftEdge = new System.Windows.Forms.CheckBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -137,6 +137,58 @@ namespace Automatizador
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(483, 654);
             this.panel2.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(189, 593);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 28;
+            this.textBox1.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(260, 86);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(39, 38);
+            this.pictureBox5.TabIndex = 27;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(25, 86);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 38);
+            this.pictureBox4.TabIndex = 26;
+            this.pictureBox4.TabStop = false;
+            // 
+            // chkMicrosoftEdge
+            // 
+            this.chkMicrosoftEdge.AutoSize = true;
+            this.chkMicrosoftEdge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMicrosoftEdge.Location = new System.Drawing.Point(317, 100);
+            this.chkMicrosoftEdge.Name = "chkMicrosoftEdge";
+            this.chkMicrosoftEdge.Size = new System.Drawing.Size(149, 24);
+            this.chkMicrosoftEdge.TabIndex = 25;
+            this.chkMicrosoftEdge.Text = "Microsoft Edge";
+            this.chkMicrosoftEdge.UseVisualStyleBackColor = true;
+            this.chkMicrosoftEdge.CheckedChanged += new System.EventHandler(this.chkMicrosoftEdge_CheckedChanged);
+            // 
+            // chkInternetExplorer
+            // 
+            this.chkInternetExplorer.AutoSize = true;
+            this.chkInternetExplorer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkInternetExplorer.Location = new System.Drawing.Point(74, 100);
+            this.chkInternetExplorer.Name = "chkInternetExplorer";
+            this.chkInternetExplorer.Size = new System.Drawing.Size(163, 24);
+            this.chkInternetExplorer.TabIndex = 24;
+            this.chkInternetExplorer.Text = "Internet Explorer";
+            this.chkInternetExplorer.UseVisualStyleBackColor = true;
+            this.chkInternetExplorer.CheckedChanged += new System.EventHandler(this.chkInternetExplorer_CheckedChanged);
             // 
             // chkMozilla
             // 
@@ -407,58 +459,6 @@ namespace Automatizador
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
-            // chkInternetExplorer
-            // 
-            this.chkInternetExplorer.AutoSize = true;
-            this.chkInternetExplorer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkInternetExplorer.Location = new System.Drawing.Point(74, 100);
-            this.chkInternetExplorer.Name = "chkInternetExplorer";
-            this.chkInternetExplorer.Size = new System.Drawing.Size(163, 24);
-            this.chkInternetExplorer.TabIndex = 24;
-            this.chkInternetExplorer.Text = "Internet Explorer";
-            this.chkInternetExplorer.UseVisualStyleBackColor = true;
-            this.chkInternetExplorer.CheckedChanged += new System.EventHandler(this.chkInternetExplorer_CheckedChanged);
-            // 
-            // chkMicrosoftEdge
-            // 
-            this.chkMicrosoftEdge.AutoSize = true;
-            this.chkMicrosoftEdge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMicrosoftEdge.Location = new System.Drawing.Point(317, 100);
-            this.chkMicrosoftEdge.Name = "chkMicrosoftEdge";
-            this.chkMicrosoftEdge.Size = new System.Drawing.Size(149, 24);
-            this.chkMicrosoftEdge.TabIndex = 25;
-            this.chkMicrosoftEdge.Text = "Microsoft Edge";
-            this.chkMicrosoftEdge.UseVisualStyleBackColor = true;
-            this.chkMicrosoftEdge.CheckedChanged += new System.EventHandler(this.chkMicrosoftEdge_CheckedChanged);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 86);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox4.TabIndex = 26;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(260, 86);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox5.TabIndex = 27;
-            this.pictureBox5.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(189, 593);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.Visible = false;
-            // 
             // FormSoftware
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,10 +476,10 @@ namespace Automatizador
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
