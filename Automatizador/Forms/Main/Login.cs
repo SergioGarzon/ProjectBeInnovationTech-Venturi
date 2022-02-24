@@ -28,8 +28,7 @@ namespace Automatizador
             
             if (txtUsuario.Text.Equals("Administrador") && txtContrasena.Text.Equals("12345678"))
             {
-                txtUsuario.Text = string.Empty;
-                txtContrasena.Text = string.Empty;
+                SetsText();
                 this.Hide();
                 FormularioPrincipal frm = new FormularioPrincipal();
                 frm.ShowDialog(this);

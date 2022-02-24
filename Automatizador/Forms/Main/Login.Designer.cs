@@ -107,7 +107,7 @@ namespace Automatizador
             this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.Location = new System.Drawing.Point(399, 152);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.PasswordChar = '•';
             this.txtContrasena.Size = new System.Drawing.Size(325, 31);
             this.txtContrasena.TabIndex = 5;
             // 

@@ -110,6 +110,12 @@
     <Compile Include="Forms\Clients\ClientesForm.Designer.cs">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Data\ServiceFazenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Data\ServiceFazenda.Designer.cs">
+      <DependentUpon>ServiceFazenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main\Break.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clients\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Data\ServiceFazenda.resx">
+      <DependentUpon>ServiceFazenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main\Break.resx">
       <DependentUpon>Break.cs</DependentUpon>

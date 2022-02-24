@@ -20,9 +20,11 @@ namespace Automatizador
 
         public FormularioPrincipal()
         {
+
             ts = null;
             ts = new Timer();
             ts.Tick += new EventHandler(eventoTimer);
+
             InitializeComponent();
             ts.Enabled = true;
         }

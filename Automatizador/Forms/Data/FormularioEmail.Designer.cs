@@ -140,6 +140,7 @@ namespace Automatizador
             // btnBeTechGmail
             // 
             this.btnBeTechGmail.BackColor = System.Drawing.Color.LightGreen;
+            this.btnBeTechGmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBeTechGmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBeTechGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeTechGmail.Location = new System.Drawing.Point(614, 143);

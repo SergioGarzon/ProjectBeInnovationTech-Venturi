@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Automatizador.Forms.Data;
 
 namespace Automatizador
 {
@@ -81,7 +82,7 @@ namespace Automatizador
         #endregion
 
 
-        #region EVENTOS
+        #region EVENTOS_CLICK
 
         private void btnSage_Click(object sender, EventArgs e)
         {
@@ -106,6 +107,11 @@ namespace Automatizador
         private void btnSkype_Click(object sender, EventArgs e)
         {
             startUrl(getUrlData(5));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            startUrl(getUrlData(7));
         }
 
         private void btnCopySage_Click(object sender, EventArgs e)
@@ -138,6 +144,16 @@ namespace Automatizador
             copyUrl("Ley de transparencia: " + getUrlData(5));
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = getUrlData(7);
+            copyUrl("Sage: " + getUrlData(7));
+        }
 
         #endregion
 
@@ -188,7 +204,13 @@ namespace Automatizador
                     dataValue += "venturihnos.atlassian.net/jira/projects";
                     break;
                 case 5:
-                    dataValue += "";
+                    dataValue += "deolhonoimposto.ibpt.org.br/Site/Entrar";
+                    break;
+                case 6:
+                    dataValue += "www.nfe.fazenda.gov.br/portal/disponibilidade.aspx?versao=0.00&tipoConteudo=P2c98tUpxrI=&AspxAutoDetectCookieSupport=1";
+                    break;
+                case 7:
+                    dataValue += "v12dev.adonixargentina.com:31200/auth/login/page";
                     break;
             }
 
@@ -223,6 +245,37 @@ namespace Automatizador
         }
 
         #endregion
-        
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = getUrlData(6);
+            copyUrl("Estado de SEFAZ: " + getUrlData(6));
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ServiceFazenda serviceFaz = new ServiceFazenda();
+            serviceFaz.ShowDialog();
+        }
     }
 }
